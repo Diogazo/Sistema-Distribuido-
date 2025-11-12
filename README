@@ -1,0 +1,28 @@
+# Actividad - Cliente Síncrono API
+
+Este proyecto es la actividad de la clase sobre clientes síncronos.
+
+## Descripción
+
+El sistema tiene dos partes:
+1.  **`server.py`**: Una API (hecha en Flask) que maneja usuarios. Tiene delays (`time.sleep`) para simular que es lenta.
+2.  **`client_to_complete.py`**: Un script de Python que consume esa API usando `requests`.
+
+## Cómo ejecutar
+
+Necesitas tener instaladas las librerías `flask` y `requests`.
+
+1.  **Abrir una terminal y correr el servidor:**
+    ```bash
+    python server.py
+    ```
+    (Se queda corriendo en `localhost:5000`)
+
+2.  **Abrir OTRA terminal y correr el cliente:**
+    ```bash
+    python client_to_complete.py
+    ```
+
+## Resultado esperado
+
+Se mostrará en la terminal del cliente cómo se piden los usuarios (1, 2, 3) uno por uno (tarda aprox 6 segundos) y luego crea un usuario nuevo (tarda 1 seg) y lo vuelve a pedir (tarda 2 seg).

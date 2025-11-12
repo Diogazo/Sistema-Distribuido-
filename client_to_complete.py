@@ -1,3 +1,7 @@
+#Diogo Alejandro Vela Macías
+#Sexto Semestre
+#Arquitectura y servicios distribuidos
+
 import requests
 import time
 
@@ -73,9 +77,12 @@ if __name__ == '__main__':
     print("="*50)
 
     # TAREA 1: Crear un nuevo usuario
+    # (Usamos la función que ya existía)
     new_user = create_user_sync("David", "david@example.com")
     
     # TAREA 2: Si el usuario fue creado, obtenerlo y mostrarlo
     if new_user:
+        # Obtenemos el ID del usuario que acabamos de crear
         user_id = new_user['data']['id']
+        # Usamos la función de obtener usuario con ese ID
         get_user_sync(user_id)
